@@ -44,3 +44,28 @@ main{
 .fs3{
     font-size: 3rem;
 }
+
+.cellWidth8{
+    width: 8rem;
+}
+
+.cellWidth5{
+    width: 5rem;
+}
+
+.bgA{
+    background-color: orange;
+}
+.bgB{
+    background-color: yellow;
+}
+
+.bigTable{
+    display: none;
+}
+
+@media screen and (min-width: 576px) { 
+    .bigTable{
+        display: table-cell;
+    }
+}
