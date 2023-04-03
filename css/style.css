@@ -50,6 +50,18 @@ main{
     background-color: rgba(0, 0, 0, 0.233);
 }
 
+.bgGreen{
+    background-color: #198754;
+}
+
+.bgRed{
+    background-color: #dc3545;
+}
+
+.bgYellow{
+    background-color: #ffc107;
+}
+
 .fs3{
     font-size: 3rem;
 }
@@ -90,6 +102,10 @@ main{
     aspect-ratio: 1/1;
     background-image: url(../img/class-avatar.jpg);
     background-size: contain;
+}
+
+.offcanvas{
+    min-width: 50%;
 }
 @media screen and (min-width: 576px) { 
     .bigTable{

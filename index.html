@@ -18,7 +18,7 @@
                 <img class="img-fluid me-2 smallLogo" src="./img/mobile-logo.png" alt="">
                 <img class="img-fluid me-2 bigLogo" src="./img/logo.svg" alt="">
                 <form class="d-flex w-100" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
                 <div class="d-flex align-items-center">
                     <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
@@ -82,8 +82,18 @@
             <div class="mainContent h-100 overflow-y-auto">
                 <div class="container-fluid bgBlue">
                     <div class="row text-white">
-                        <div class="col-12 col-md-2 d-flex align-items-center order-md-3 justify-content-md-end mt-3">
-                            <p class="m-0">nuovo studente </p> <i class="fs3 fa-regular fa-square-plus ps-2"></i>
+                        <div class="col-12 col-md-2 d-flex order-md-3 justify-content-md-center mt-3">
+                            <p class="m-0 mt-2">nuovo studente </p> <a class="text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" role="button">
+                            <i class="fs3 fa-regular fa-square-plus ps-2"></i></a> 
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                ...
+                                </div>
+                            </div>    
                         </div>
                         <div class="col-12 col-md-6 order-md-1 mt-3">
                             <div class="d-flex align-items-center">
@@ -135,21 +145,21 @@
                                             <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
-                                            <td>badge</td>
+                                            <td><span class="badge rounded-pill bgGreen">Done</span></td>
                                             <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr>
                                             <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
-                                            <td>badge</td>
+                                            <td><span class="badge rounded-pill bgRed">failed</span></td>
                                             <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr>
                                             <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
-                                            <td>badge</td>
+                                            <td><span class="badge rounded-pill bgYellow">processing</span></td>
                                             <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr>
