@@ -13,63 +13,79 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid flex-nowrap">
-            <img class="img-fluid me-2" src="./img/logo.svg" alt="">
-            <form class="d-flex w-100" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <div class="d-flex align-items-center">
-                <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="nav-item dropstart ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bell"></i>
+                <img class="img-fluid me-2 smallLogo" src="./img/mobile-logo.png" alt="">
+                <img class="img-fluid me-2 bigLogo" src="./img/logo.svg" alt="">
+                <form class="d-flex w-100" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="d-flex align-items-center">
+                    <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropstart ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="mainWrapper d-flex">
-            <div class="sideBar d-flex flex-column justify-content-between h-100">
+            <div class="sideBar d-flex flex-column justify-content-between h-100 text-white">
                 <div class="container-fluid">
-                    <div class="row p-3">
-                        <div class="col-12">Home</div>
-                        <div class="col-12">Stats</div>
-                        <div class="col-12">Signals</div>
+                    <div class="row p-3 g-3">
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-house me-2"></i>Home</div>
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-chart-simple me-2"></i>Stats</div>
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-chart-simple me-2"></i>Signals</div>
                     </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row h-100 p-3">
-                        <div class="col-12">admin</div>
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-gear me-2"></i>admin</div>
+                    </div>
+                </div>                
+            </div>
+            <div class="sideBarMobile d-flex flex-column justify-content-between h-100 text-white">
+                <div class="container-fluid">
+                    <div class="row p-3 g-3">
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-house me-2"></i></div>
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-chart-simple me-2"></i></div>
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-chart-simple me-2"></i></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row h-100 p-3">
+                        <div class="col-12 d-flex align-items-center"><i class="fa-solid fa-gear me-2"></i></div>
                     </div>
                 </div>                
             </div>
             <div class="mainContent h-100 overflow-y-auto">
                 <div class="container-fluid bgBlue">
                     <div class="row text-white">
-                        <div class="col-12 col-md-4 d-flex align-items-center order-md-3 justify-content-md-end">
+                        <div class="col-12 col-md-2 d-flex align-items-center order-md-3 justify-content-md-end mt-3">
                             <p class="m-0">nuovo studente </p> <i class="fs3 fa-regular fa-square-plus ps-2"></i>
                         </div>
-                        <div class="col-12 col-md-4 order-md-1">
+                        <div class="col-12 col-md-6 order-md-1 mt-3">
                             <div class="d-flex align-items-center">
                                 <h2 class="m-0">Boolean</h2>
                                 <div class="pt-2 ps-2">
@@ -77,14 +93,20 @@
                                 </div>
                             </div>
                             <div class="d-flex">
-                                <div class="pt-2 ps-2">
-                                    <span class="badge rounded-pill bgShade">Piano blaze</span>
-                                </div><div class="pt-2 ps-2">
-                                    <span class="badge rounded-pill bgShade">Piano blaze</span>
+                                <div class="pt-2">
+                                    <span class="badge rounded-pill bgShade">3app </span> >>
+                                </div>                              
+                                <div class="pt-2 badgers">
+                                    <span class="badge rounded-pill bgShade">Boolean mobile app</span>
+                                    <span class="badge rounded-pill bgShade">Boolean web app</span>
+                                    <span class="badge rounded-pill bgShade">Boolean blog app</span>
                                 </div>
+                                <div class="pt-2 badgersMobile">
+                                    <span class="badge rounded-pill bgShade">+</span>
+                                </div>                                
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 order-md-2">
+                        <div class="col-12 col-md-4 order-md-2 mt-3">
                             <h3>Studenti online negli ultimi 30 minuti</h3>
                             <p>125</p>
                         </div>
@@ -110,20 +132,56 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>Classe 75</td>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
                                             <td>badge</td>
                                             <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr>
-                                            <td>Classe 75</td>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
                                             <td>badge</td>
                                             <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
-                                        </tr><tr>
-                                            <td>Classe 75</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
+                                            <td class="bigTable">15 feb 2021</td>
+                                            <td class="bigTable">20%</td>
+                                            <td>badge</td>
+                                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
+                                            <td class="bigTable">15 feb 2021</td>
+                                            <td class="bigTable">20%</td>
+                                            <td>badge</td>
+                                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
+                                            <td class="bigTable">15 feb 2021</td>
+                                            <td class="bigTable">20%</td>
+                                            <td>badge</td>
+                                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
+                                            <td class="bigTable">15 feb 2021</td>
+                                            <td class="bigTable">20%</td>
+                                            <td>badge</td>
+                                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
+                                            <td class="bigTable">15 feb 2021</td>
+                                            <td class="bigTable">20%</td>
+                                            <td>badge</td>
+                                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-center"><div class="classLogo me-1"></div> Classe 75</td>
                                             <td class="bigTable">15 feb 2021</td>
                                             <td class="bigTable">20%</td>
                                             <td>badge</td>
@@ -193,12 +251,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card p-2">
+                            <div class="card p-2 mt-3">
 
                                 <div class="card">
                                     <img class="img-fluid mt-1" src="./img/stats.jpeg" alt="">
-                                    <h5>Utenti attivi</h5>
-                                    <p>Lista degli utenti attivi in piattaforma negli ultimi 5 mesi</p>
+                                    <h5 class="ms-3">Utenti attivi</h5>
+                                    <p class="ms-3">Lista degli utenti attivi in piattaforma negli ultimi 5 mesi</p>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">An item</li>
                                         <li class="list-group-item">A second item</li>

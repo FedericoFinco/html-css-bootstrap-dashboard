@@ -6,6 +6,7 @@
 :root{
     --navbar-height: 60px;
     --sidebar-width: 150px;
+    --sidebar-mobile-width: 70px;
 }
 
 header{
@@ -20,7 +21,15 @@ header{
 
 .sideBar{
     width: var(--sidebar-width);
-    background-color: blanchedalmond;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    display: none !important;
+}
+
+.sideBarMobile{
+    width: var(--sidebar-mobile-width);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
 }
 
 .mainContent{
@@ -64,8 +73,47 @@ main{
     display: none;
 }
 
+.smallLogo{
+    height: 40px;
+}
+
+.badgers{
+    display: none;
+}
+
+.bigLogo{
+    display: none;
+}
+
+.classLogo{
+    height: 20px;
+    aspect-ratio: 1/1;
+    background-image: url(../img/class-avatar.jpg);
+    background-size: contain;
+}
 @media screen and (min-width: 576px) { 
     .bigTable{
         display: table-cell;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .smallLogo{
+        display: none;
+    }
+    .bigLogo{
+        display: inline-block;
+    }
+    .sideBar{
+        display: flex !important;
+    }
+    .sideBarMobile{
+        display: none !important;
+    }
+    .badgers{
+        display: block;
+    }
+    .badgersMobile{
+        display: none;
     }
 }
