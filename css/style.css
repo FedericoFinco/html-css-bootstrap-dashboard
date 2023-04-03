@@ -104,6 +104,10 @@ main{
     background-size: contain;
 }
 
+.col6Imp{
+    width: 50% !important;
+}
+
 .offcanvas{
     min-width: 50%;
 }
