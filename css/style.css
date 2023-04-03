@@ -11,12 +11,10 @@
 
 header{
     height: var(--navbar-height);
-    background-color: violet;
 }
 
 .mainWrapper{
     height: 100%;
-    background-color: aquamarine;
 }
 
 .sideBar{
@@ -32,9 +30,17 @@ header{
     background-color: #051e34;
 }
 
+.h3rem{
+    height: 3rem;
+}
+
+.bordered{
+    border: 1px solid grey;
+    display: inline-block;
+}
+
 .mainContent{
     width: 100%;
-    background-color: green;
     height: 100%;
 }
 
@@ -74,12 +80,6 @@ main{
     width: 5rem;
 }
 
-.bgA{
-    background-color: orange;
-}
-.bgB{
-    background-color: yellow;
-}
 
 .bigTable{
     display: none;
